@@ -63,17 +63,19 @@ Descripción corta del código
 	- `testDivide()` — verifica que `10 / 2 == 5.0`.
 	- `testDivideByZeroThrows()` — verifica que dividir por cero lanza `ArithmeticException`.
 
+
 Buenas prácticas y siguientes pasos sugeridos
 ------------------------------------------
 
-- Añadir pruebas unitarias puras (sin arrancar el contexto Spring) usando Mockito para acelerar los tests.
-- Añadir un controlador REST y pruebas de integración que verifiquen endpoints HTTP.
+- Añadir pruebas unitarias puras (sin arrancar el contexto Spring) usando Mockito para acelerar los tests. Se añadieron pruebas unitarias puras (`CalculatorServiceUnitTest`) y tests de controlador con `MockMvc`.
+- Añadir un controlador REST y pruebas de integración que verifiquen endpoints HTTP. Se añadió `CalculatorController` y su test con `@WebMvcTest`.
 - Migrar a Spring Boot 3.x si prefieres Java 17+ (requiere algunos cambios en dependencias y compatibilidad).
+- Añadir integración continua (CI). Se agregó un workflow de GitHub Actions en `.github/workflows/ci.yml` que ejecuta `mvn test` en push y pull request contra `main`.
 
 Licencia
 --------
 
-Usa la licencia que prefieras; actualmente no se ha incluido ninguna licencia en este repositorio.
+Este repositorio incluye una licencia MIT en el archivo `LICENSE`.
 
 Soporte y contacto
 -------------------
