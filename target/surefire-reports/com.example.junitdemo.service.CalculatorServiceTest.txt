@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.example.junitdemo.service.CalculatorServiceTest
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.005 s - in com.example.junitdemo.service.CalculatorServiceTest
